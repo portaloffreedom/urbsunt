@@ -1,0 +1,4 @@
+[Project]
+Name=demo-sdl
+Manager=KDevCMakeManager
+VersionControl=kdevgit
