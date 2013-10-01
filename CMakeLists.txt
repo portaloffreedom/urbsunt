@@ -16,10 +16,11 @@ if(CMAKE_COMPILER_IS_GNUCXX)
 endif()
 
 
+add_subdirectory(engine)
+
 add_executable(demo-sdl main.cpp)
 
-target_link_libraries(demo-sdl ${GLEW_LIBRARIES} ${OPENGL_gl_LIBRARY} SDL2)
+target_link_libraries(demo-sdl SmEngine_dynamic ${GLEW_LIBRARIES} ${OPENGL_gl_LIBRARY} SDL2)
 
 install(TARGETS demo-sdl RUNTIME DESTINATION bin)
 
-add_subdirectory(Engine)
